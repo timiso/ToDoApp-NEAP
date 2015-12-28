@@ -1,0 +1,50 @@
+wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+sudo apt-get update
+
+sudo apt-get install postgresql-9.3 pgadmin3 -y
+
+#node.js
+curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
+sudo apt-get install -y nodejs
+
+sudo npm install -g --unsafe-perm fire
+
+---------------------------------------------------------------------------
+
+https://wiki.postgresql.org/wiki/PostgreSQL_For_Development_With_Vagrant
+
+export LANGUAGE="en_US.UTF-8"
+echo 'LANGUAGE="en_US.UTF-8"' | sudo tee --append /etc/default/locale
+echo 'LC_ALL="en_US.UTF-8"' | sudo tee --append /etc/default/locale
+
+
+sudo apt-get install -y g++
+curl -sL https://deb.nodesource.com/setup_0.12 | sudo bash -
+sudo apt-get install -y nodejs
+
+#sudo npm install -g --unsafe-perm fire
+
+
+---------------------------------------------------------------------------
+PostgreSQL and NodeJS
+
+http://mherman.org/blog/2015/02/12/postgresql-and-nodejs/#.VoEMIHqfFZ4
+
+
+# Change directory to your application's project directory containing the Vagrantfile
+$ cd myapp
+
+# Connect via SSH to the virtual machine
+$ vagrant ssh
+
+# Become the postgres user:
+$ sudo su - postgres
+
+
+createuser todo
+createdb --owner=todo todo "Sample to-do database"
+
+
+---------------------------------------------------------------------
+
+sudo apt-get install -y postgresql-9.4

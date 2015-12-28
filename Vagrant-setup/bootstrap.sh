@@ -98,4 +98,10 @@ date > "$PROVISIONED_ON"
 
 echo "Successfully created PostgreSQL dev virtual machine."
 echo ""
+
+# Install some useful tools
+
+curl -sL https://deb.nodesource.com/setup_0.12 | sudo bash -
+sudo apt-get install -y nodejs
+
 print_db_usage
