@@ -1,7 +1,7 @@
 #!/bin/sh -e
 
 # Edit the following to change the name of the database user that will be created:
-APP_DB_USER=myapp
+APP_DB_USER=todo
 APP_DB_PASS=dbpass
 
 # Edit the following to change the name of the database that is created (defaults to the user name)
@@ -91,6 +91,8 @@ CREATE DATABASE $APP_DB_NAME WITH OWNER=$APP_DB_USER
                                   LC_CTYPE='en_US.utf8'
                                   ENCODING='UTF8'
                                   TEMPLATE=template0;
+
+
 EOF
 
 # Tag the provision time:
