@@ -22,8 +22,9 @@ sudo apt-get install -y g++
 curl -sL https://deb.nodesource.com/setup_0.12 | sudo bash -
 sudo apt-get install -y nodejs
 
-#sudo npm install -g --unsafe-perm fire
-
+npm install express --save
+sudo npm install -g supervisor
+sudo npm install express-generator -g
 
 ---------------------------------------------------------------------------
 PostgreSQL and NodeJS
