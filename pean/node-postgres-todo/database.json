@@ -1,11 +1,20 @@
 {
   "dev": {
     "driver": "pg",
-    "user": "tester",
-    "password": "tester",
+    "user": "todo",
+    "password": "dbpass",
     "host": "localhost",
-    "database": "dbmigrate",
+    "database": "todo",
     "schema": "public"
+  },
+
+  "aws": {
+    "driver": "pg",
+    "user": "todo",
+    "password": "dbpass",
+    "host": " confidexdbinstance.cohceb45wdmc.eu-central-1.rds.amazonaws.com",
+    "database": "todo",
+    "schema": "public"    
   }
   
 }
