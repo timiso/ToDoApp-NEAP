@@ -1,19 +1,19 @@
 {
   "dev": {
     "driver": "pg",
-    "user": "",
-    "password": "",
+    "user": {"ENV": "USERNAME"},
+    "password": {"ENV": "PASSWORD"},
     "host": "localhost",
-    "database": "",
+    "database": {"ENV": "DATABASE"},
     "schema": "public"
   },
 
   "aws": {
     "driver": "pg",
-    "user": "",
-    "password": "",
+    "user": {"ENV": "USERNAME"},
+    "password": {"ENV": "PASSWORD"},
     "host": " confidexdbinstance.cohceb45wdmc.eu-central-1.rds.amazonaws.com",
-    "database": "",
+    "database": {"ENV": "DATABASE"},
     "schema": "public"    
   }
   
