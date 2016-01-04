@@ -106,4 +106,9 @@ apt-get install -y g++
 curl -sL https://deb.nodesource.com/setup_0.12 | sh
 apt-get install -y nodejs
 
+# 
+su vagrant
+cd /vagrant/pean/node-postgres-todo
+npm install supervisor
+
 print_db_usage
