@@ -1,0 +1,11 @@
+{
+  "dev": {
+    "driver": "pg",
+    "user": "tester",
+    "password": "tester",
+    "host": "localhost",
+    "database": "dbmigrate",
+    "schema": "public"
+  }
+  
+}
